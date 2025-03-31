@@ -47,6 +47,7 @@ export default async function Page({
               {/* <ItemTitle title="EXPLORE OUR PROJECTS" /> */}
               { data?.map((r:any,i:number) => (
               <ItemBox
+                key={i}
                 title={r.title}
                 content= {toPlainText(r.body)}
                 featureImg={r?.mainImage}

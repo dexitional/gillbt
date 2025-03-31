@@ -48,6 +48,7 @@ export default async function Page({
           <div className="px-4 py-6 md:mx-auto md:max-w-6xl font-sans grid grid-cols-1 gap-10 rounded-xl">
             { data?.map((r:any,i:number) => (
                 <PressBox
+                  key={i}
                   title={r.title}
                   link={`/publications/${r.slug?.current}`}
                   featureImg={r?.mainImage}

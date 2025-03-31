@@ -52,6 +52,7 @@ export default async function Page({
               
              { data?.map((r:any,i:number) => (
               <ItemBox
+                key={i}
                 title={r.title}
                 content= {toPlainText(r.summary)}
                 featureImg={r.mainImage}

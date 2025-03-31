@@ -51,6 +51,7 @@ export default async function Page({
                // ?.filter((r: any) => r.showGallery)
                 ?.map((r: any, i: number) => (
                   <GalleryBox
+                    key={i}
                     title={r.title}
                     images={r.images}
                     link={`#`}

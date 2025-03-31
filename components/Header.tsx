@@ -74,7 +74,7 @@ function Header() {
     <header className="z-20 sm:sticky sm:top-0 bg-white w-full shadow-[0px_10px_10px_rgba(0,0,0,0.1)] font-sans">
       {/* Top Nav Bar */}
       <div className="hidden sm:block w-full bg-[rgb(167,185,215)]">
-        <div className="px-6 md:mx-auto w-full h-10 sm:max-w-7xl font-medium text-primary text-sm flex items-center justify-between">
+        <div className="px-5 md:mx-auto w-full h-10 sm:max-w-7xl font-medium text-primary text-sm flex items-center justify-between">
           <span className="font-black tracking-widest text-base">GHANA INSTITUTE OF LINGUISTICS, LITERACY & BIBLE TRANSLATION</span>
           <div className="space-x-4 divide divide-x-2">
             <span>(050) 1329465</span>
@@ -84,7 +84,7 @@ function Header() {
       </div>
       {/* Menu Bar */}
       <div className="w-full">
-        <div className="px-6 hidden mx-auto w-full sm:h-[7rem] sm:max-w-7xl sm:flex items-center justify-between ">
+        <div className="px-5 hidden mx-auto w-full sm:h-[7rem] sm:max-w-7xl sm:flex items-center justify-between ">
           <LogoMain />
           <MainNav data={navigations} />
         </div>

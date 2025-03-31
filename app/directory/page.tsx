@@ -18,7 +18,6 @@ export default function Page() {
   const [ recs, setRecs ] = useState([])
   useLayoutEffect(() => {
     loadData().then((dm) => {
-      console.log(dm);
       setRecs(dm);
     });
   },[])

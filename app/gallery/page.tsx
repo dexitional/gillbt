@@ -52,8 +52,8 @@ export default async function Page({
                 ?.map((r: any, i: number) => (
                   <GalleryBox
                     key={i}
-                    title={r.title}
-                    images={r.images}
+                    title={r?.title}
+                    images={r?.images}
                     link={`#`}
                     category="Gallery"
                     categoryLink="#"

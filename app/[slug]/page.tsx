@@ -44,13 +44,13 @@ export default async function Page({
       <section className="w-full bg-gradient-to-r from-white from-20% via-50% to-80% via-primary/60 to-white ">
         <div className="relative mx-auto px-4 py-4 md:py-4 md:max-w-6xl flex flex-col space-y-4 text-sm md:text-lg text-justify font-medium text-gray-600">
           <div className="relative h-16 md:h-96 rounded-lg overflow-hidden shadow">
-            <Image src={data?.mainImage ? urlFor(data.mainImage).width(683).url() : Img} alt="Banner" className="object-cover" fill />
+            <Image src={data?.mainImage ? urlFor(data?.mainImage).width(683).url() : Img} alt="Banner" className="object-cover" fill />
           </div>
         </div>
       </section>
       }
       <PageContentWrapper  className="px-4 md:px-0 w-full bg-header-bg">
-        {<PortableText value={data.body} />}
+        {<PortableText value={data?.body} />}
       </PageContentWrapper>
       {/* {['history',''].includes(slug) && <VisionSection /> } */}
     </main>

@@ -41,7 +41,7 @@ export default async function Page({
       <section className="px-4 md:px-0 w-full bg-header-bg">
         <div className="mx-auto py-4 md:py-10 md:max-w-5xl flex flex-col space-y-4 text-sm md:text-lg text-justify font-medium text-gray-600">
           <PageContentWrapper  className="px-4 md:px-0 w-full bg-header-bg">
-          {<PortableText value={data.body} />}
+          {<PortableText value={data?.body} />}
         </PageContentWrapper>
         </div>
       </section>

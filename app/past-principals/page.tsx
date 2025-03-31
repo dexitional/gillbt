@@ -28,9 +28,6 @@ export default async function Page({
   }>;
 }) {
   const { slug } = await params;
-  const sp = await searchParams;
-  //const data = await getPost(slug);
-  console.log(slug)
   return (
     <main className="font-sans min-h-[30rem]">
       <section className="px-6 py-2 md:px-0 md:pt-12 md:pb-6 w-full border-b-2 bg-primary bg-header-bg bg-repeat-x">

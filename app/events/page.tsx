@@ -52,7 +52,7 @@ export default async function Page({
                 content= {toPlainText(r.body)}
                 featureImg={r?.mainImage}
                 label="View Event"
-                link={r.publishedAt && moment(r.publishedAt).format('MMMM DD, YYYY')}
+                link={r?.publishedAt && moment(r?.publishedAt).format('MMMM DD, YYYY')}
               />
               ))}
 

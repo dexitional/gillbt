@@ -43,7 +43,7 @@ export default async function Page({
       <MessageSection data={sub} />
       <main className="mx-auto px-4 py-4 pb-10 md:py-20 md:max-w-5xl flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10 items-start">
           <div className="relative h-48 w-full md:h-72 md:w-2/5 rounded-lg overflow-hidden">
-            <Image src={data?.profileImage ? urlFor(data.profileImage).width(683).url() : Img} alt="" className="object-contain object-left-top" fill/>
+            <Image src={data?.profileImage ? urlFor(data?.profileImage).width(683).url() : Img} alt="" className="object-contain object-left-top" fill/>
           </div>
           <section className="flex-1 space-y-6">
             <div>

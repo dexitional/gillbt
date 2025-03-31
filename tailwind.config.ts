@@ -26,7 +26,8 @@ const config: Config = {
   			],
 		},
   		colors: {
-  			'primary': 'rgb(2 49 153)',
+  			// 'primary': 'rgb(2 49 153)',rgb(40 53 131)
+  			'primary': 'rgb(40 53 131)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
